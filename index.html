@@ -204,7 +204,7 @@
     <h2>Оставить вопрос</h2>
     <p class="lead">Заполните форму ниже — вопрос попадёт в очередь поддержки, а скрины сохранятся в общей папке. Ответим в течение 1–2 рабочих дней на почту, указанную в форме.</p>
     <div class="form-card">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclvq1WoohbeahHduaBy2I6F8BWOYrrxjDZ2SHsGiZYANuW0A/viewform?embedded=true">
+      <iframe data-tally-src="https://tally.so/embed/ODq9pp?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="400" title="Mymeetfeedback">
         Загрузка формы…
       </iframe>
     </div>
@@ -223,3 +223,9 @@
     <p class="fine">Форма доступна первые 30 дней после подключения к mymeet.ai. Если прошло больше месяца — напишите нам на support@mymeet.ai.</p>
   </footer>
 </div>
+
+<script>
+  var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};
+  if("undefined"!=typeof Tally)v();
+  else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s)}
+</script>
